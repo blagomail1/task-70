@@ -14,5 +14,17 @@
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+    <script>
+const imageDiv = document.createElement('div');
+imageDiv.className = 'image';
+const image = document.createElement('img');
+image.setAttribute('src', './avatar.webp');
+imageDiv.appendChild(image);
+const mainElement = document.querySelector('.main');
+mainElement.appendChild(imageDiv);
+const imageElement = document.querySelector('.image');
+imageElement.addEventListener('click', function() {
+imageElement.classList.add('big');
+});
   </body>
 </html>
